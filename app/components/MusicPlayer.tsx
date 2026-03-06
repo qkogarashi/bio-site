@@ -7,8 +7,8 @@ const tracks = [
     id: 0,
     title: "Классика кварталов — Icegergert",
     genre: "From Spotify",
-    bpm: 0,
-    key: "-",
+    year: 2023,
+    tag: "Golden youth",
     duration: 999,
     src: "/audio/Klassika.mp3",
   },
@@ -16,8 +16,8 @@ const tracks = [
     id: 1,
     title: "AUDIODRAG - Pepel Nahudi",
     genre: "From Spotify",
-    bpm: 0,
-    key: "-",
+    year: 2024,
+    tag: "Russian Rap",
     duration: 999,
     src: "/audio/AUDIODRAG.mp3",
   },
@@ -25,8 +25,8 @@ const tracks = [
     id: 2,
     title: "AMMO — FRIENDLY THUG 52 NGG",
     genre: "From Spotify",
-    bpm: 0,
-    key: "-",
+    year: 2024,
+    tag: "Russian Rap",
     duration: 999,
     src: "/audio/AMMO.mp3",
   },
@@ -233,6 +233,8 @@ export default function MusicPlayer() {
             <div className="grid grid-cols-3 gap-4 mb-8">
               {[
                 { label: "Duration", value: fmt(trackDuration) },
+                { label: "Year", value: track.year },
+                { label: "Tags", value: track.tag },
               ].map((m) => (
                 <div key={m.label} className="border border-white/8 px-3 py-2">
                   <div className="font-mono text-[10px] text-white/25 uppercase tracking-wider">
