@@ -232,8 +232,6 @@ export default function MusicPlayer() {
 
             <div className="grid grid-cols-3 gap-4 mb-8">
               {[
-                { label: "BPM", value: track.bpm },
-                { label: "Key", value: track.key },
                 { label: "Duration", value: fmt(trackDuration) },
               ].map((m) => (
                 <div key={m.label} className="border border-white/8 px-3 py-2">
