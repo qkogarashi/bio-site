@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "qkogarashi — Developer",
-  description: "Discord bot developer for Haru server & crypto software developer. Building bots, DeFi tools, and crypto projects.",
-  keywords: ["developer", "discord bot", "crypto", "typescript", "python"],
+  description: "Discord bot developer TS & crypto software developer on Rust.rs. Building bots and crypto projects.",
+  keywords: ["developer", "discord bot", "crypto", "typescript"],
 };
 
 export default function RootLayout({
